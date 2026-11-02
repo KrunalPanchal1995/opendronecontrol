@@ -1,0 +1,88 @@
+[
+  {
+    "title": "Fix typos and unclear sentences in the Session 1 notes",
+    "labels": [
+      "good first issue",
+      "beginner",
+      "documentation"
+    ],
+    "body": "## Problem\nThe Session 1 notes may contain typos or sentences that a first-year student finds confusing.\n\n## Context\nBeginners judge the whole repo by Session 1.\n\n## Expected outcome\nA clearer `sessions/session-01/README.md` and `lesson.py` comments.\n\n## Relevant files\n`sessions/session-01/README.md`, `sessions/session-01/lesson.py`\n\n## Acceptance criteria\n- [ ] At least three improvements\n- [ ] `python start.py test` still passes\n\n## Difficulty\nbeginner"
+  },
+  {
+    "title": "Add a colour-blind-safe palette and line styles to the Session 2 app",
+    "labels": [
+      "good first issue",
+      "beginner"
+    ],
+    "body": "## Problem\nThe Session 2 app and figures tell P, PD and PID apart mainly by colour (red, blue, green); some colour-blind users cannot tell them apart.\n\n## Context\nAccessibility is part of the quality checklist (QUALITY.md, item 9).\n\n## Expected outcome\nA palette plus dashed or dotted line styles that stay distinguishable in light and dark mode and in grayscale.\n\n## Relevant files\n`sessions/session-02/app.html`, `sessions/session-02/lesson.py`\n\n## Acceptance criteria\n- [ ] All three controllers distinguishable in grayscale\n- [ ] Screenshot added to the pull request\n\n## Difficulty\nbeginner"
+  },
+  {
+    "title": "Session 3 app: animate the sideways move with a Play button",
+    "labels": [
+      "good first issue",
+      "intermediate",
+      "feature"
+    ],
+    "body": "## Problem\nIn the Session 3 app the learner drags a time slider to see the drone lean. A Play button that runs the time from 0 to 8 s would make the cascade much easier to see.\n\n## Context\nThe app already simulates the whole move; only the drawing needs to step through time.\n\n## Expected outcome\nA Play / Pause button that animates the drone view with requestAnimationFrame and keeps the time slider in step.\n\n## Relevant files\n`sessions/session-03/app.html`\n\n## Acceptance criteria\n- [ ] Works in light and dark mode and on a phone\n- [ ] Pause stops the animation; the slider still works\n- [ ] No new libraries\n\n## Difficulty\nintermediate"
+  },
+  {
+    "title": "Add Session 4: the rate loop and gyroscope noise",
+    "labels": [
+      "intermediate",
+      "feature"
+    ],
+    "body": "## Problem\nThe roadmap's first milestone does not exist yet.\n\n## Context\nSee `promo/roadmap.md`, Session 4. Real flight controllers run a rate loop inside the attitude loop, and the D term amplifies gyro noise.\n\n## Expected outcome\n`sessions/session-04/` with README (sections A to F), lesson, checkpoint, exercises and app in the same style as Sessions 1 to 3.\n\n## Relevant files\n`promo/roadmap.md`, `sessions/session-03/lesson.py`\n\n## Acceptance criteria\n- [ ] Checkpoint prints PASS and the roadmap checkpoint is met\n- [ ] Added to the tests\n\n## Difficulty\nintermediate"
+  },
+  {
+    "title": "Add Session 5: integrator wind-up and wind gusts",
+    "labels": [
+      "intermediate",
+      "feature"
+    ],
+    "body": "## Problem\nSession 2's integral term has no anti-wind-up, and Session 3's position loop drifts in a steady side wind.\n\n## Context\nRoadmap Session 5.\n\n## Expected outcome\nA lesson and app where a large climb saturates the thrust, with an anti-wind-up switch and a side-wind slider.\n\n## Relevant files\n`sessions/session-02/lesson.py`, `sessions/session-03/lesson.py`, `promo/roadmap.md`\n\n## Acceptance criteria\n- [ ] The roadmap checkpoint is met and shown in a figure\n- [ ] Checkpoint added\n\n## Difficulty\nintermediate"
+  },
+  {
+    "title": "Reproduce the Target: a 3-D quadrotor flying a square through a gust",
+    "labels": [
+      "advanced",
+      "feature"
+    ],
+    "body": "## Problem\nThe Target is a full 3-D quadrotor with a rate, attitude and position cascade flying a 2 m square at 1.5 m through a gust; there is no public implementation.\n\n## Context\nOnly the planar first step (Session 3) is published. The roadmap gives the path.\n\n## Expected outcome\nYour own implementation, written from the roadmap, plus an animation or figure like the Target.\n\n## Relevant files\n`promo/roadmap.md`, `sessions/session-03/lesson.py`\n\n## Acceptance criteria\n- [ ] Largest distance from the planned square below 10 cm\n- [ ] Lands within 5 cm of the start\n- [ ] Short write-up of your method\n\n## Difficulty\nadvanced"
+  },
+  {
+    "title": "Translate the Session 1 notes into Hindi",
+    "labels": [
+      "good first issue",
+      "beginner",
+      "documentation"
+    ],
+    "body": "## Problem\nStudents who prefer Hindi cannot read Session 1 comfortably.\n\n## Context\nThis project teaches first- and second-year students across India; translations widen who can join.\n\n## Expected outcome\n`sessions/session-01/README.hi.md` with a faithful Hindi translation of sections A to F, linked from the main README.\n\n## Relevant files\n`sessions/session-01/README.md`\n\n## Acceptance criteria\n- [ ] All sections translated\n- [ ] Equations, code blocks and file names unchanged\n- [ ] Link added to the main README\n\n## Difficulty\nbeginner"
+  },
+  {
+    "title": "Translate the Session 1 notes into Telugu",
+    "labels": [
+      "good first issue",
+      "beginner",
+      "documentation"
+    ],
+    "body": "## Problem\nStudents who prefer Telugu cannot read Session 1 comfortably.\n\n## Context\nThis project teaches first- and second-year students across India; translations widen who can join.\n\n## Expected outcome\n`sessions/session-01/README.te.md` with a faithful Telugu translation of sections A to F, linked from the main README.\n\n## Relevant files\n`sessions/session-01/README.md`\n\n## Acceptance criteria\n- [ ] All sections translated\n- [ ] Equations, code blocks and file names unchanged\n- [ ] Link added to the main README\n\n## Difficulty\nbeginner"
+  },
+  {
+    "title": "Translate the Session 1 notes into Tamil",
+    "labels": [
+      "good first issue",
+      "beginner",
+      "documentation"
+    ],
+    "body": "## Problem\nStudents who prefer Tamil cannot read Session 1 comfortably.\n\n## Context\nThis project teaches first- and second-year students across India; translations widen who can join.\n\n## Expected outcome\n`sessions/session-01/README.ta.md` with a faithful Tamil translation of sections A to F, linked from the main README.\n\n## Relevant files\n`sessions/session-01/README.md`\n\n## Acceptance criteria\n- [ ] All sections translated\n- [ ] Equations, code blocks and file names unchanged\n- [ ] Link added to the main README\n\n## Difficulty\nbeginner"
+  },
+  {
+    "title": "Translate the Session 1 notes into Malayalam",
+    "labels": [
+      "good first issue",
+      "beginner",
+      "documentation"
+    ],
+    "body": "## Problem\nStudents who prefer Malayalam cannot read Session 1 comfortably.\n\n## Context\nThis project teaches first- and second-year students across India; translations widen who can join.\n\n## Expected outcome\n`sessions/session-01/README.ml.md` with a faithful Malayalam translation of sections A to F, linked from the main README.\n\n## Relevant files\n`sessions/session-01/README.md`\n\n## Acceptance criteria\n- [ ] All sections translated\n- [ ] Equations, code blocks and file names unchanged\n- [ ] Link added to the main README\n\n## Difficulty\nbeginner"
+  }
+]
